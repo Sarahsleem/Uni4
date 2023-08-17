@@ -7,16 +7,16 @@ using namespace std;
 class Department
 {
 private:
-    string department_name;
+    string name;
     int capacity;
     double required_gpa;
 
 
 public:
 
-    void set_department_name(string dpname)
+    void set_name(string dpname)
     {
-        department_name = dpname;
+        name = dpname;
     }
 
     void set_capacity(int s)
@@ -28,9 +28,9 @@ public:
         required_gpa = gpa;
     }
 
-    string get_department_name()
+    string get_name()
     {
-        return department_name;
+        return name;
     }
     int get_capacity()
     {
@@ -42,18 +42,18 @@ public:
     }
 };
 
-class Proffeser: public person
+class Proffeser: public Person
 {
 private:
-    string Proffeser_name;
+    string name;
     int degree;
     double salary;
 
 public:
 
-    void set_Proffeser_name(string pname)
+    void set_name(string pname)
     {
-        Proffeser_name = pname;
+        name = pname;
     }
 
     void set_degree(int s)
@@ -65,10 +65,10 @@ public:
         salary = num;
     }
 
-    string get_Proffeser_name()
+    string get_name()
     {
-        return Proffeser_name;
-    }
+        return name;
+
     int get_degree()
     {
         return degree;
@@ -106,7 +106,7 @@ public:
     void add_department(string name,int capacity,double required_Gpa)
     {
         department ss;
-        ss.set_department_name(name);
+        ss.set_name(name);
         ss.set_capacity(capacity);
         ss.set_required_gpa(required_Gpa);
 
@@ -167,4 +167,4 @@ int main()
 {
 
 }
-cs
+
