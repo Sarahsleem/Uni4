@@ -3,16 +3,16 @@
 
 using namespace std;
 
-class person
+class Person
 {
 private :
     int id,age;
     string name;
     char gender;
 public:
-    person() {}
+    Person() {}
 
-    void pesron(int id, int age,string name,char gender)
+    void Pesron(int id, int age,string name,char gender)
     {
         this->id=id;
         this->age=age;
@@ -54,7 +54,7 @@ public:
     virtual void personnone()=0;
 };
 
-class Student: public person
+class Student: public Person
 {
 private:
     int level;
